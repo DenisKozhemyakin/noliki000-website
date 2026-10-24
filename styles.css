@@ -756,8 +756,14 @@ em {
   padding-bottom: var(--section-space);
 }
 
+/* Вирівнюємо опис праворуч по верхньому краю заголовка. */
+.directions .section-heading {
+  align-items: flex-start;
+}
+
 .directions .section-heading > p {
   max-width: 430px;
+  margin-top: 57px;
   color: var(--muted);
 }
 
@@ -984,17 +990,28 @@ em {
 }
 
 .materials .section-heading {
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 620px);
+  align-items: start;
+  gap: 28px;
 }
 
 .materials .section-heading > div {
   max-width: none;
 }
 
+.materials .section-heading h2 {
+  color: #0b3538;
+}
+
+.materials .section-heading h2 em {
+  color: #4b76df;
+}
+
 .materials .section-heading > p {
   max-width: 620px;
-  margin-top: 32px;
-  margin-left: auto;
+  margin-top: 42px;
+  margin-left: 0;
   color: var(--muted);
   font-size: 0.96rem;
 }
@@ -2053,17 +2070,17 @@ em {
 }
 
 .final-content h2 {
-  color: #bde9ff;
+  color: #1838B7;
   font-size: clamp(3.5rem, 5vw, 5rem);
   text-wrap: balance;
 }
 
 .final-content > .final-subtitle {
-  max-width: 30rem;
+  max-width: 42rem;
   margin: 28px auto 0;
   color: #ffffff;
   font-family: var(--heading);
-  font-size: clamp(1.25rem, 1.8vw, 1.8rem);
+  font-size: clamp(1.45rem, 2.1vw, 2.1rem);
   font-weight: 700;
   line-height: 1.35;
   text-wrap: balance;
@@ -2071,7 +2088,7 @@ em {
 
 .final-content > p:not(.final-subtitle) {
   max-width: 34rem;
-  margin: 44px auto 0;
+  margin: 40px auto 0;
   font-family: var(--serif);
   font-size: clamp(1rem, 1.4vw, 1.2rem);
   line-height: 1.55;
@@ -2317,6 +2334,10 @@ em {
 
   h3 {
     font-size: 1.65rem;
+  }
+
+  .materials .section-heading {
+    display: block;
   }
 
   .materials .section-heading > p {
@@ -2747,7 +2768,7 @@ em {
   }
 
   .final-content > p:not(.final-subtitle) {
-    margin: 36px 0 0;
+    margin: 58px 0 0;
   }
 
   .final-content > div {
@@ -3067,4 +3088,32 @@ em {
     width: 29px;
     height: 29px;
   }
+}
+
+/* Фінальний блок: заголовок одним рядком у кольорі «Підбір фарби». */
+@media (min-width: 769px) {
+  .final-cta .final-content {
+    width: min(1200px, calc(100% - 40px));
+    max-width: none;
+  }
+
+  .final-cta .final-content h2 {
+    color: #1838B7;
+    font-size: clamp(2rem, 4.1vw, 4.1rem);
+    white-space: nowrap;
+    text-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .final-cta .final-content h2 {
+    color: #1838B7;
+  }
+}
+
+/* Заголовок «Ваша ідея починається тут» */
+#final-cta-title {
+    color: #ffffff !important;
+    position: relative;
+    top: -15px;
 }
