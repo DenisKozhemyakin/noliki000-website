@@ -3020,7 +3020,7 @@ em {
 .telegram-floating {
   position: fixed;
   right: 24px;
-  bottom: 24px;
+  bottom: 54px;
   width: 60px;
   height: 60px;
 
@@ -3079,7 +3079,7 @@ em {
 @media (max-width: 768px) {
   .telegram-floating {
     right: 16px;
-    bottom: 20px;
+    bottom: 50px;
     width: 54px;
     height: 54px;
   }
