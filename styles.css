@@ -3123,3 +3123,18 @@ em {
     border-radius: 50% !important;
     object-fit: cover !important;
 }
+/* Прибираємо білий квадрат навколо логотипа у футері */
+footer img[src*="logo"],
+.site-footer img[src*="logo"],
+.footer img[src*="logo"] {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+/* Прибираємо фон контейнера логотипа */
+footer .brand,
+footer .footer-brand,
+.site-footer .brand,
+.site-footer .footer-brand {
+    background: transparent !important;
+}
