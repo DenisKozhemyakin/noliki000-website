@@ -3116,4 +3116,10 @@ em {
     color: #ffffff !important;
     position: relative;
     top: -15px;
+}/* Круглий логотип без білого квадрата */
+.site-header .brand img,
+.site-footer .brand img,
+.footer-brand img {
+    border-radius: 50% !important;
+    object-fit: cover !important;
 }
