@@ -3123,3 +3123,18 @@ em {
     border-radius: 50% !important;
     object-fit: cover !important;
 }
+/* Круглий логотип у нижній частині сайту */
+footer .brand-light img,
+footer .бренд-лайт img {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* Прибираємо білий фон навколо логотипа */
+footer .brand-light,
+footer .бренд-лайт {
+    background: transparent !important;
+}
